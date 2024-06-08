@@ -8,6 +8,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
 }
+
 .event-list {
   max-width: 800px;
   margin: 0 auto;
@@ -32,7 +33,7 @@
   width: 100%;
   background: #f7f7f7;
   padding-bottom: 60px;
-  padding-top: 25px;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -41,8 +42,8 @@
 }    
 
 #argentine-portraits {
-  padding-top: 20px;
   padding-bottom: 40px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -715,6 +716,7 @@ p {
 #video {
   position: relative;
   padding-bottom: 50px;
+  padding-top: 40px;
 }
 
 #video .row {
