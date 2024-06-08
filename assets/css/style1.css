@@ -1,15 +1,47 @@
-:root {
+:paddsectionroot {
   --color1: #bbbcb8;
   --color2: #101a1b;
   --color3: #846046;
+}
+
+#events {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.event-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.event-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 20px 0;
+}
+.event-item:last-child {
+  border-bottom: none;
+}
+.event-date-time {
+  font-weight: bold;
+}
+.event-description {
+  color: #555;
+  margin-top: 10px;
+}
+#photos {
+  height: auto;
+  width: 100%;
+  background: #f7f7f7;
+  padding-bottom: 60px;
+  padding-top: 25px;
+  position: relative;
 }
 
 .link {
   max-width: 200px;
 }    
 
-#album {
-  padding-top: 40px;
+#argentine-portraits {
+  padding-top: 20px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -39,6 +71,32 @@
   margin-bottom: 10px !important;
 }
 
+.carousel {
+  max-width: 75vw !important;
+  margin: 0 auto;
+}
+
+.carousel-control-prev {
+  left: -15%;
+}
+
+.carousel-control-next {
+  right: -15%;
+}
+
+.move-up {
+  transform: translateY(-1.5px);
+}
+
+.move-up-more {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 1024px) { 
+  #hero {
+    background: url("../img/mobileHero.jpg") center/cover !important;
+  }
+}
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   #album-covers {
@@ -57,11 +115,7 @@
     justify-content: center;
     flex-direction: column;
     padding-left: 0px !important;
-    padding-bottom: 550px !important;
-  }
-
-  #hero {
-    background: url("../img/mobileHero.jpg") center/cover !important;
+    padding-bottom: 400px !important;
   }
 
   .album-links svg {
@@ -70,10 +124,6 @@
 
   #bio-pic {
     margin-top: 30px !important;
-  }
-
-  #bio {
-    padding-top: 0!important;
   }
 }
 
@@ -592,7 +642,7 @@ p {
 }
 
 .carousel-item img {
-  height: 90vh;
+  max-height: 90vh;
   object-fit: contain;
   width: 100%;
 }
@@ -624,7 +674,7 @@ p {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 60px;
+  padding-top: 35px;
   padding-bottom: 60px;
 }
 
@@ -664,7 +714,6 @@ p {
 --------------------------------------------------------------*/
 #video {
   position: relative;
-  padding-top: 40px;
   padding-bottom: 50px;
 }
 
@@ -679,13 +728,6 @@ p {
 /*--------------------------------------------------------------
 # events
 --------------------------------------------------------------*/
-#events, #events-blog {
-  height: auto;
-  width: 100%;
-  background: #f7f7f7;
-  padding-bottom: 60px;
-  position: relative;
-}
 
 #events-blog {
   background: #fff;
